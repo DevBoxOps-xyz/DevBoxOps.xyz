@@ -9,22 +9,25 @@ variables:
 stages:
   - deploy
 
-pages:
+prod:
   stage: "deploy"
   script: [/entrypoint.sh]
+  environment:
+    name: production
+    url: "https://devboxops.xyz"
   artifacts:
     paths:
     - public
   only:
     - main
 
-develop:
-  except: [main]
+devel:
+  only: [devel]
   artifacts:
     paths:
     - public
   environment:
-    name: Develop
+    name: devel
     url: "https://dev.devboxops.xyz"
   script: [/entrypoint.sh]
   stage: deploy
