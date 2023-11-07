@@ -1,12 +1,19 @@
 ---
-stages:
-  - build_and_push
+image:
+  name: ghcr.io/oldtyt/hugo-docker
+  entrypoint: [""]
 
-build_and_push:
-  image:
-    name: ghcr.io/oldtyt/hugo-docker
-    entrypoint: [""]
-  stage: "build_and_push"
+variables:
+  PUBLIC_URL: /
+
+stages:
+  - deploy
+
+pages:
+  stage: "deploy"
   script: [/entrypoint.sh]
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+  artifacts:
+    paths:
+    - /pages
+  only:
+    - main
