@@ -17,3 +17,16 @@ pages:
     - public
   only:
     - main
+
+develop:
+  except: [main]
+  artifacts:
+    paths:
+    - public
+  environment:
+    name: Develop
+    url: "https://dev.devboxops.xyz"
+  script: [/entrypoint.sh]
+  stage: deploy
+  variables:
+    BASE_URL: "https://dev.devboxops.xyz"
