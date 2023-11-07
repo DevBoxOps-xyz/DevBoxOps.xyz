@@ -1,12 +1,2 @@
----
-stages:
-  - build_and_push
-
-build_and_push:
-  image:
-    name: ghcr.io/oldtyt/hugo-docker
-    entrypoint: [""]
-  stage: "build_and_push"
-  script: [/entrypoint.sh]
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+# The Docker image that will be used to build your app
+image: ghcr.io/oldtyt/hugo-docker
