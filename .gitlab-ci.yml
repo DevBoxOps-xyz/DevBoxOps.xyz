@@ -22,7 +22,7 @@ prod:
     - main
 
 devel:
-  except: [main]
+  only: [devel]
   artifacts:
     paths:
     - public
