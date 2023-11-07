@@ -14,6 +14,6 @@ pages:
   script: [/entrypoint.sh]
   artifacts:
     paths:
-    - /pages
+    - public
   only:
     - main
