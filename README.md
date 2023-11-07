@@ -5,3 +5,5 @@
 ```
 hugo new -k external posts/my-post.md
 ```
+
+Test
