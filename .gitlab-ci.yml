@@ -1,0 +1,11 @@
+---
+stages:
+  - build_and_push
+
+build_and_push:
+  image:
+    name: ghcr.io/oldtyt/hugo-docker
+    entrypoint: [""]
+  script: [/entrypoint.sh]
+  rules:
+    if: $CI_COMMIT_BRANCH == "main"
