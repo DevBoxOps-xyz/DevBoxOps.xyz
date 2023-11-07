@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "DevBoxOps"
+
+[params]
+  displayName = "🇬🇧"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2006-01-02"
+  #logo = "img/logo_inverted@0.25x.png"
+  #secondaryLogo = "img/logo@0.25x.png"
+  description = "DBO | DevBoxOps"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[author]
+  name = "DevBoxOps"
+  #image = "img/avatar.jpg"
+  headline = "Team"
+  bio = "Boxxx"
+  links = [
+    { gitlab = "https://github.com/DevBoxOps" },
+  ]
