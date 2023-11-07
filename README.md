@@ -6,6 +6,10 @@
 hugo new -k external posts/my-post.md
 ```
 
+### Other docs
+
+https://blowfish.page/docs/
+
 ## Workflow
 
 1. Create changes in devel brach
