@@ -1,6 +1,6 @@
 ---
-title: "About"
-date: 2023-11-16T20:40:37+01:00
+title: "О нас"
+date: 2023-11-07T20:40:37+01:00
 draft: false
 
 showDate : false
@@ -18,8 +18,9 @@ showViews: true
 showLikes: false
 showAuthor: true
 layoutBackgroundHeaderSpace: false
-
+languageCode: "ru"
+languageName: "Russian"
 
 ---
 
-Something
+Что-то

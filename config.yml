@@ -1,0 +1,162 @@
+title: DevBoxOps
+paginate: 5
+theme: hugo-papermod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+    minifyOutput: true
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+languages:
+    en:
+        languageName: "English 🇺🇸"
+        weight: 1
+        taxonomies:
+          tag: tags
+          category: categories
+          author: authors
+          series: series
+        menu:
+            main:
+                - name: Posts
+                  url: posts
+                  weight: 1
+                - name: About
+                  url: about
+                  weight: 3
+                - name: Search
+                  url: search
+                  weight: 4
+    ru:
+        languageName: "Russian 🇷🇺"
+        weight: 1
+        taxonomies:
+          tag: tags
+          category: categories
+          author: authors
+          series: series
+        menu:
+            main:
+                - name: Посты
+                  url: posts
+                  weight: 1
+                - name: "О нас"
+                  url: about
+                  weight: 3
+                - name: Поиск
+                  url: search
+                  weight: 4
+
+# Markdown
+goldmark:
+  renderer:
+    unsafe: true
+highlight:
+  noClasses: false
+tableOfContents:
+  startLevel: 2
+  endLevel: 4
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "DevBoxOps site"
+    author: OldTyT
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: true
+        title: DevBoxOps
+        imageUrl: "../icon.png"
+        imageTitle: My avatar
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+
+    socialIcons:
+        - name: github
+          url: "https://gitlab.com/DevBoxOps"
+        - name: gitlab
+          url: "https://gitlab.com/OldTyT"
+        - name: telegram
+          url: "https://arasaka_2077.t.me"
+        - name: "telegram chat"
+          url: "https://t.me/oldi_na_meste"
+
+    editPost:
+        URL: "https://gitlab.com/DevBoxOps/devboxops.xyz/blob/main/content"
+        Text: "Suggest Changes"
+        appendFilePath: true
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "G-2Q1PY6PFPY"
+
+    assets:
+        disableHLJS: true
+        favicon: "../icon.png"
+        apple_touch_icon: "../icon.png"
+        safari_pinned_tab: "../icon.png"
+
+    cover:
+      linkFullImages: true
+      responsiveImages: true
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
