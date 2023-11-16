@@ -1,4 +1,3 @@
-baseURL: "https://devboxops.xyz"
 title: DevBoxOps
 paginate: 5
 theme: hugo-papermod
