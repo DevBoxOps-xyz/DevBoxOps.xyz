@@ -3,15 +3,14 @@ image:
   name: ghcr.io/oldtyt/hugo-docker
   entrypoint: [""]
 
-variables:
-  PUBLIC_URL: /
-
 stages:
   - deploy
 
 prod:
   stage: "deploy"
   script: [/entrypoint.sh]
+  variables:
+    BASEURL: https://devboxops.xyz
   environment:
     name: production
     url: "https://devboxops.xyz"
@@ -26,10 +25,10 @@ devel:
   artifacts:
     paths:
     - public
+  variables:
+    BASEURL: https://dev.devboxops.xyz
   environment:
     name: devel
     url: "https://dev.devboxops.xyz"
   script: [/entrypoint.sh]
   stage: deploy
-  variables:
-    BASE_URL: "https://dev.devboxops.xyz"
